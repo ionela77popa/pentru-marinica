@@ -226,3 +226,47 @@ moviePoster.addEventListener('error', () => {
   document.querySelector('#poster-placeholder').hidden = false;
 });
 moviePoster.src = moviePoster.dataset.src;
+
+// Ease heading size toward its scroll position without changing page layout.
+if (!reducedMotion) {
+  const scrollTitles = [...document.querySelectorAll('.reveal h2')].map(element => {
+    element.classList.add('scroll-grow');
+    return { element, current: 0, target: 0 };
+  });
+  let titleFrame = null;
+  let needsMeasurement = true;
+  let lastTitleTime = 0;
+  function animateScrollTitles(now) {
+    titleFrame = null;
+    if (needsMeasurement) {
+      const viewportHeight = window.innerHeight;
+      scrollTitles.forEach(title => {
+        const top = title.element.getBoundingClientRect().top;
+        title.target = Math.max(0, Math.min(1, (viewportHeight * 0.95 - top) / (viewportHeight * 0.4)));
+      });
+      needsMeasurement = false;
+    }
+    const elapsed = lastTitleTime ? Math.min(64, now - lastTitleTime) : 16;
+    const easing = 1 - Math.exp(-elapsed / 125);
+    lastTitleTime = now;
+    let moving = false;
+    scrollTitles.forEach(title => {
+      title.current += (title.target - title.current) * easing;
+      if (Math.abs(title.target - title.current) < 0.001) title.current = title.target;
+      else moving = true;
+      title.element.style.setProperty('--scroll-scale', (0.92 + title.current * 0.08).toFixed(4));
+      title.element.style.setProperty('--scroll-lift', `${((1 - title.current) * 10).toFixed(2)}px`);
+    });
+    if (moving) titleFrame = requestAnimationFrame(animateScrollTitles);
+    else lastTitleTime = 0;
+  }
+  function refreshScrollTitles() {
+    needsMeasurement = true;
+    if (titleFrame === null) titleFrame = requestAnimationFrame(animateScrollTitles);
+  }
+  window.addEventListener('scroll', refreshScrollTitles, { passive: true });
+  window.addEventListener('resize', refreshScrollTitles, { passive: true });
+  window.addEventListener('load', refreshScrollTitles);
+  if ('ResizeObserver' in window) new ResizeObserver(refreshScrollTitles).observe(document.body);
+  refreshScrollTitles();
+}

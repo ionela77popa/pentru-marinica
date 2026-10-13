@@ -124,3 +124,6 @@ footer>a{display:block;margin-top:18px}
   .hero .friends img{height:32vh;height:32svh;min-height:155px}
   .hero .friends p{position:static;margin:24px 0 0;text-shadow:none}
 }
+
+.scroll-grow{transform:translateY(var(--scroll-lift,10px)) scale(var(--scroll-scale,.92));transform-origin:center center}
+@media(prefers-reduced-motion:reduce){.scroll-grow{transform:none}}
