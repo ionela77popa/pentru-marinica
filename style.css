@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Parisienne&display=swap');
+:root{--cream:#f7f3ed;--pink:#efd8d6;--sage:#c2c6b9;--rose:#dba1a2;--brown:#422b23;--muted:#806c60}*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth;scroll-padding-top:35px}body{margin:0;background:var(--cream);color:var(--brown);font-family:'DM Sans',sans-serif;font-size:14px}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible{outline:2px solid #9b6769;outline-offset:6px}header{height:90px;max-width:1280px;margin:auto;padding:0 6%;display:flex;align-items:center;justify-content:flex-end}.brand{font-family:'Cormorant Garamond',serif;font-size:25px;font-style:italic}.brand span{color:#ae777b;margin-left:8px}.header-note{font-size:11px;letter-spacing:1px}.header-note span{margin-left:12px;color:#b57c7f}.hero{position:relative;min-height:810px;text-align:center;padding:50px 0 22px;overflow:hidden}.eyebrow{font-size:9px;letter-spacing:2.5px;font-weight:500;line-height:1.8}.hero .eyebrow{margin-top:25px}.bow{font-family:serif;font-size:55px;line-height:1;color:var(--rose)}.hero-bow{margin:28px auto 8px}h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400}h1{font-size:clamp(76px,10.5vw,150px);line-height:.98;margin:18px 0 27px;position:relative;letter-spacing:-4px}h1>span{font-family:'Parisienne',cursive;font-size:1.12em;color:#b77d80;letter-spacing:-3px}.title-heart{position:absolute;width:48px;height:48px;transform:rotate(15deg);margin:20px 0 0 16px;fill:none;stroke:#c29192;stroke-width:1.8}.hero-copy{font-size:13px;line-height:1.8;color:var(--muted);margin-bottom:24px}.pill{display:inline-flex;align-items:center;gap:26px;border:1px solid #d7b9b4;border-radius:50px;padding:15px 25px;background:#f5e6df;font-size:11px;transition:transform .2s,background .2s}.pill:hover{transform:translateY(-3px);background:var(--pink)}.pill span{font-size:16px}.friends{width:100%;position:relative;margin:35px auto 0}.friends img{width:100%;height:auto;display:block;border-radius:0}.friends p{font-family:'Parisienne',cursive;font-size:21px;margin:0;color:#8b7464}.scroll-note{display:block;margin:36px auto 0;font-size:9px;letter-spacing:1.5px;color:var(--muted)}.scroll-note span{display:block;font-size:20px;margin-top:9px}.letter-section,.notes-section,.wish-section{text-align:center;padding:100px 20px}h2{font-size:52px;line-height:1.06;letter-spacing:-1.5px;margin:22px 0}h2 em{font-weight:400;color:#ae777b}.section-copy{color:var(--muted);font-size:12px;line-height:1.8;margin:18px 0 36px}.letter-section{background:#efe8df;background-image:radial-gradient(#cbbfb633 .7px,transparent .7px);background-size:5px 5px}.envelope{display:block;position:relative;width:345px;height:212px;background:#efd8d6;border:1px solid #dcc0b8;margin:50px auto 12px;box-shadow:0 15px 30px #422b2310;isolation:isolate;transition:transform .4s}.envelope:hover{transform:rotate(-2deg)}.envelope:after,.envelope:before{content:'';position:absolute;inset:0;background:linear-gradient(32deg,transparent 49.6%,#ddc0b9 50%,transparent 50.5%);z-index:-1}.envelope:after{transform:scaleX(-1)}.envelope-flap{position:absolute;left:-1px;top:-1px;width:calc(100% + 2px);height:119px;clip-path:polygon(0 0,100% 0,50% 100%);background:#e6c6c2}.seal{position:absolute;top:83px;left:calc(50% - 23px);width:46px;height:46px;display:grid;place-items:center;border-radius:50%;background:#bf8286;color:#f7f3ed;font-family:serif;font-size:27px;box-shadow:0 2px 4px #422b2320}.envelope-address{position:absolute;bottom:39px;left:0;right:0;font-family:'Parisienne',cursive;font-size:25px}.envelope-hint{position:absolute;left:0;right:0;bottom:15px;font-size:8px;letter-spacing:1.5px}.envelope.opened .seal{background:var(--sage)}.letter{max-width:600px;margin:35px auto 0;background:#fffaf2;padding:42px 46px;text-align:left;box-shadow:0 12px 30px #422b230b;border:1px solid #e4d9cd;animation:letter-in .6s ease}.letter-bow{float:right;color:var(--rose);font-size:38px}.letter h3{font-size:30px;font-style:italic}.letter p{font-family:'Cormorant Garamond',serif;font-size:21px;line-height:1.5}.letter .signature{font-family:'Parisienne',cursive;font-size:28px;color:#aa7379;line-height:1.2;margin-top:30px}.memories{max-width:1140px;margin:auto;padding:100px 55px}.section-top{display:flex;justify-content:space-between;align-items:center}.hand-note{font-family:'Parisienne',cursive;font-size:27px;color:#a97d7c;transform:rotate(-8deg)}.hand-note span{display:block;text-align:center;font-family:serif;font-size:36px}.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin:55px 0 38px}.polaroid{position:relative;margin:0;background:#fffcf8;padding:13px 13px 20px;box-shadow:0 5px 18px #422b2312;transform:rotate(-5deg)}.polaroid:nth-child(2){transform:rotate(4deg);margin-top:20px}.polaroid:nth-child(3){transform:rotate(-3deg)}.photo-slot{display:block;padding:0;border:0;width:100%;aspect-ratio:4/5;background:#eae3d9;overflow:hidden}.photo-slot img{width:100%;height:100%;object-fit:cover}.photo-placeholder{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;gap:18px;background:#e5e6dc;color:#8a8e7d}.photo-placeholder.second{background:#eedfdf;color:#ac8081}.photo-placeholder.third{background:#eae1d3;color:#a38a71}.sketch-flower{font-family:serif;font-size:65px;line-height:1}.photo-placeholder>span:not(.sketch-flower){font-family:'Parisienne',cursive;font-size:22px}.photo-placeholder small{font-size:8px;opacity:.75}.polaroid figcaption{font-family:'Parisienne',cursive;font-size:24px;text-align:center;margin-top:18px}.tape{position:absolute;width:90px;height:27px;top:-12px;left:calc(50% - 45px);background:#c2c6b980;transform:rotate(3deg);clip-path:polygon(3% 0,98% 3%,95% 95%,0 100%)}.polaroid:nth-child(2) .tape{background:#dba1a260}.album-note{text-align:center;font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;line-height:1.6;color:var(--muted);margin:65px 0 0}.notes-section{background:#e9eade;padding-bottom:80px}.jar-scene{display:flex;justify-content:center;align-items:center;gap:75px;margin:55px auto 40px}.jar{width:175px;height:205px;border:2px solid #9ba48b;border-radius:20px 20px 35px 35px;position:relative;background:#f7f3ed66;box-shadow:inset 10px 0 0 #ffffff50;transform:rotate(-5deg)}.jar-lid{position:absolute;top:-22px;left:-5px;width:181px;height:26px;border-radius:8px;background:repeating-linear-gradient(90deg,#a9af99 0 4px,#bac0ac 4px 8px);border:1px solid #9ba48b}.paper{position:absolute;background:#efd8d6;width:50px;height:38px;display:grid;place-items:center;color:#b77d80;font-family:serif;font-size:24px}.p1{bottom:16px;left:14px;transform:rotate(24deg)}.p2{bottom:20px;right:10px;transform:rotate(-24deg);background:#f7f3ed}.p3{top:40px;left:16px;transform:rotate(-20deg);background:#f7f3ed}.p4{top:30px;right:13px;transform:rotate(18deg)}.jar-label{position:absolute;left:19px;right:19px;top:80px;background:#f7f3ed;padding:15px 0;font-family:'Parisienne',cursive;font-size:28px;border:1px solid #d8d8ca;line-height:1}.jar-label span{font-family:'DM Sans',sans-serif;font-size:8px;letter-spacing:2px}.note-card{width:280px;min-height:190px;background:#fffaf2;box-shadow:0 7px 20px #422b230e;transform:rotate(4deg);padding:23px;display:flex;flex-direction:column;align-items:center;justify-content:center}.tiny-bow{font-family:serif;font-size:34px;color:var(--rose)}.note-card p{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.25;margin:10px 0 18px}.note-card>span:last-child{font-size:8px;letter-spacing:1px;color:var(--muted)}.rose{background:var(--pink)}.wish-section{padding-bottom:90px}.cake-button{border:0;background:transparent;display:block;position:relative;width:210px;height:205px;margin:30px auto 20px}.flame{position:absolute;top:5px;left:96px;width:17px;height:29px;border-radius:60% 40% 60% 40%;background:#d5ab66;transform:rotate(8deg);box-shadow:0 0 24px #dbbd8480;animation:flicker 1.5s infinite alternate}.candle-stick{position:absolute;top:34px;left:98px;width:13px;height:55px;border-radius:3px;background:repeating-linear-gradient(145deg,#efd8d6 0 8px,#c58e91 8px 12px)}.cake-top{position:absolute;left:20px;top:84px;width:170px;height:35px;border-radius:50%;background:#efd8d6;border:1px solid #dba1a2;z-index:2}.cake-body{position:absolute;left:20px;top:101px;width:170px;height:76px;border-radius:0 0 45% 45%;background:#dba1a2;display:flex;align-items:center;justify-content:space-evenly;color:#efd8d6;font-size:23px}.cake-plate{position:absolute;bottom:17px;left:4px;width:202px;height:23px;border-radius:50%;background:#d9ddce;z-index:-1}#wish-message{font-size:10px;letter-spacing:.5px;color:var(--muted)}.cake-button.blown .flame{display:none}.cake-button.blown .candle-stick:before{content:'﹏';position:absolute;top:-29px;left:-3px;color:#afa398;font-size:24px;animation:smoke 2s forwards}.wish-end{font-family:'Cormorant Garamond',serif;font-size:30px;margin-top:48px}.wish-end span{font-size:20px;font-style:italic;color:var(--muted)}footer{text-align:center;border-top:1px solid #e3d9cf;padding:45px 20px;background:#f0e6e0}footer .bow{font-size:40px}footer p{font-size:10px;color:var(--muted);margin:20px 0 12px}footer a{font-family:'Parisienne',cursive;font-size:30px}footer small{display:block;font-size:8px;letter-spacing:1px;color:var(--muted);margin-top:20px}.petals{position:fixed;inset:0;pointer-events:none;z-index:10;overflow:hidden}.petal{position:absolute;top:-30px;color:#dba1a2;opacity:.65;animation:fall linear forwards}.reveal{opacity:1}.js-ready .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}.js-ready .reveal.visible{opacity:1;transform:none}dialog{border:0;border-radius:5px;padding:14px;background:var(--cream);max-width:92vw;max-height:90vh}dialog::backdrop{background:#422b23b3}dialog img{display:block;max-width:85vw;max-height:80vh;object-fit:contain}#close-photo{position:absolute;right:15px;top:15px;border:0;border-radius:50%;width:38px;height:38px;background:var(--cream);font-size:28px}@keyframes fall{to{transform:translate3d(50px,110vh,0) rotate(290deg)}}@keyframes flicker{to{transform:rotate(-8deg) scale(.93)}}@keyframes smoke{to{transform:translateY(-30px);opacity:0}}@keyframes letter-in{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+@media(max-width:700px){header{height:70px;padding:0 24px}.brand{font-size:22px}.header-note{font-size:8px;letter-spacing:.6px}.hero{min-height:740px;padding-top:24px}.hero .eyebrow{font-size:7px;letter-spacing:1.5px;margin-top:34px}.hero-bow{font-size:46px;margin-top:29px}h1{font-size:clamp(72px,21vw,110px);letter-spacing:-3px;margin:22px 12px 27px}.title-heart{width:30px;height:30px;margin:18px 0 0 3px}.hero-copy{font-size:12px}.pill{padding:14px 23px;font-size:10px}.friends{margin-top:38px}.friends p{font-size:20px}.scroll-note{margin-top:34px;font-size:8px}.letter-section,.notes-section,.wish-section{padding:70px 23px}h2{font-size:42px;letter-spacing:-1px}.eyebrow{font-size:8px;letter-spacing:1.8px}.section-copy{font-size:11px}.envelope{width:min(100%,320px);height:200px}.letter{padding:27px 25px}.letter h3{font-size:28px}.letter p{font-size:20px}.memories{padding:70px 30px}.section-top{display:block}.hand-note{font-size:23px;text-align:right;margin:0 10px 25px}.hand-note span{display:none}.photo-grid{grid-template-columns:1fr;gap:48px;max-width:270px;margin:30px auto}.polaroid:nth-child(2){margin-top:0;transform:rotate(5deg)}.polaroid:nth-child(3){transform:rotate(-4deg)}.photo-placeholder>span:not(.sketch-flower){font-size:23px}.album-note{font-size:20px;margin-top:50px}.jar-scene{gap:24px;flex-direction:column;margin-top:50px}.jar{width:148px;height:174px}.jar-lid{width:154px}.jar-label{top:66px;left:15px;right:15px;font-size:25px}.note-card{width:265px;min-height:180px;transform:rotate(3deg);margin-top:12px}.wish-end{font-size:27px}.wish-end span{font-size:18px}footer{padding:38px 20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.js-ready .reveal{opacity:1;transform:none}.petals{display:none}}
+
+footer>a{display:block;margin-top:18px}
+
+.gift-section{text-align:center;background:#f0e3df;padding:85px 24px 95px}.gift-content{max-width:720px;margin:45px auto 0;display:grid;grid-template-columns:240px 1fr;gap:45px;align-items:center;animation:letter-in .6s ease}.movie-poster{aspect-ratio:2/3;background:#e4d3c9;padding:10px;box-shadow:0 8px 25px #422b2315;transform:rotate(-3deg)}.movie-poster img{width:100%;height:100%;object-fit:contain}.movie-poster>div{height:100%;display:grid;place-items:center;border:1px solid #c9a9a1;background:linear-gradient(145deg,#efd8d6,#f7f3ed)}.movie-poster>div span{font-family:serif;font-size:75px;color:#b77d80}.gift-details h3{font-size:42px;margin:0 0 14px}.gift-details>p{font-size:12px;color:var(--muted)}.movie-tickets{display:flex;justify-content:center;gap:14px;margin-top:30px}.movie-ticket{position:relative;flex:1;max-width:145px;background:#fffaf2;border:1px dashed #c5a49a;padding:20px 12px;display:flex;flex-direction:column;gap:10px;border-radius:8px}.movie-ticket:after{content:'';height:1px;border-top:1px dashed #c5a49a;margin:5px 0}.movie-ticket span{font-size:9px;letter-spacing:1px;color:var(--muted)}.movie-ticket strong{font-family:'Parisienne',cursive;font-size:35px;font-weight:400;color:#aa7379}
+@media(max-width:700px){.gift-section{padding:65px 24px 75px}.gift-content{grid-template-columns:1fr;gap:35px}.movie-poster{width:210px;margin:auto}.gift-details h3{font-size:36px}.hero{min-height:650px}.hero h1{margin-top:50px}}
+
+.hero-copy{max-width:390px;padding:0 16px;margin-left:auto;margin-right:auto}.friends p{margin-top:12px}
+
+.hero h1{font-size:clamp(108px,12.6vw,180px);line-height:.95;margin-bottom:35px}
+@media(max-width:700px){.hero h1{font-size:clamp(86px,25.2vw,162px);letter-spacing:-3px;line-height:.95}.hero .title-heart{width:26px;height:26px;margin-left:0}}
+
+/* Gentle transitions, with native touch and wheel scrolling preserved. */
+.letter,.gift-content{animation:none}
+.envelope-flap{transform-origin:top;transition:transform .65s cubic-bezier(.22,1,.36,1),opacity .45s}
+.envelope.opened .envelope-flap{transform:scaleY(-.7);opacity:.65}
+.seal{transition:background .4s,transform .5s}
+.envelope.opened .seal{transform:scale(.9)}
+.js-ready .reveal{transition:opacity 1s ease,transform 1s cubic-bezier(.22,1,.36,1)}
+#photo-dialog[open]{animation:photo-open .45s cubic-bezier(.22,1,.36,1)}
+#photo-dialog[open]::backdrop{animation:backdrop-open .45s ease}
+#photo-dialog.closing{animation:photo-close .3s ease forwards}
+#photo-dialog.closing::backdrop{animation:backdrop-close .3s ease forwards}
+@keyframes photo-open{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes photo-close{to{opacity:0;transform:translateY(10px) scale(.97)}}
+@keyframes backdrop-open{from{opacity:0}to{opacity:1}}
+@keyframes backdrop-close{to{opacity:0}}
+
+/* Actual ticket artwork: preserve its own dimensions, without a poster frame. */
+.gift-content{max-width:900px;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:35px}
+.movie-poster{aspect-ratio:auto;min-width:0;width:100%;padding:0;background:transparent;box-shadow:none;transform:none}
+.movie-poster img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:700px){.gift-content{grid-template-columns:minmax(0,1fr);gap:25px}.movie-poster{width:100%;max-width:480px;margin:auto}}
+
+/* Watercolor cake and five flames aligned to the original candle wicks. */
+.cake-button.mice-cake{width:min(460px,100%);height:auto;margin:45px auto 25px;padding:0;isolation:isolate}
+.mice-cake>img{display:block;width:100%;height:auto}
+.candle-fire{position:absolute;width:3.4%;height:6%;pointer-events:none}
+.fire-1{left:39%;top:16.5%}.fire-2{left:47%;top:9.85%}.fire-3{left:55.9%;top:15.24%}.fire-4{left:65.1%;top:11.8%}.fire-5{left:76.2%;top:13.36%}
+.spark{position:absolute;inset:0;border-radius:65% 35% 55% 45%;background:linear-gradient(0deg,#e6ba61,#fff4a1);box-shadow:0 0 14px 6px #f4dd7b55;transform:translate(-50%,-100%) rotate(-6deg);transform-origin:50% 100%;animation:watercolor-flame 1.3s ease-in-out infinite alternate;transition:opacity .4s}
+.spark:after{content:'';position:absolute;inset:25% 27% 12%;border-radius:60% 40% 50% 50%;background:#fff9cd}
+.fire-2 .spark{animation-delay:-.7s}.fire-3 .spark{animation-delay:-.3s}.fire-4 .spark{animation-delay:-1s}.fire-5 .spark{animation-delay:-.5s}
+.smoke{position:absolute;left:-15%;bottom:100%;width:40%;height:100%;border-left:2px solid #a3988b;border-radius:50%;opacity:0}
+.mice-cake.blown .spark{opacity:0;animation:none}
+.mice-cake.blown .smoke{animation:candle-smoke 1.8s ease-out forwards}
+@keyframes watercolor-flame{to{transform:translate(-50%,-100%) rotate(7deg) scale(.9,1.06)}}
+@keyframes candle-smoke{0%{opacity:0;transform:translateY(0) scale(.7)}25%{opacity:.45}100%{opacity:0;transform:translateY(-35px) scale(1.4)}}
+@media(prefers-reduced-motion:reduce){.spark,.mice-cake.blown .smoke{animation:none!important}.mice-cake.blown .spark{opacity:0}}
+
+/* Center the cake itself rather than the full silhouette with the mice tails. */
+.cake-button.mice-cake{transform:translateX(-7%)}
+
+/* Animated flames on the five watercolor candles. */
+.birthday-candle .spark{animation-delay:var(--flicker-delay)}
+#wish-message{line-height:1.8;font-size:12px}
+
+/* Holding extinguishes each flame independently. */
+.mice-cake{touch-action:pan-y;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.mice-cake img{pointer-events:none;-webkit-user-drag:none}
+.birthday-candle{width:2.4%;height:4.1%}
+.candle-fire.out .spark{opacity:0;animation:none}
+.candle-fire.out .smoke{animation:candle-smoke 1.5s ease-out forwards}
+.hold-progress{width:140px;height:4px;margin:20px auto 14px;background:#e8d8cc;border-radius:20px;overflow:hidden}
+.hold-progress>span{display:block;width:100%;height:100%;background:#b77d80;transform:scaleX(0);transform-origin:left center}
+@media(prefers-reduced-motion:reduce){.candle-fire.out .smoke{animation:none!important}}
+
+/* The supplied party illustration gently bounces and sends out pastel stars. */
+.party-popper{position:relative;width:135px;margin:0 auto 30px;pointer-events:none}
+.party-popper img{display:block;width:100%;height:auto;transform-origin:80% 85%;animation:party-bounce 3.6s ease-in-out infinite}
+.party-star{position:absolute;left:63%;top:60%;font-family:serif;font-size:23px;color:#c4a76c;opacity:0;animation:party-spark 3.6s ease-out infinite;animation-delay:var(--delay,0s)}
+.star-a{--dx:-85px;--dy:-85px;--delay:.15s}.star-b{--dx:35px;--dy:-105px;--delay:.4s;color:#b8a7c8;font-size:16px}.star-c{--dx:-60px;--dy:-120px;--delay:.7s;color:#cf9298;font-size:19px}.star-d{--dx:70px;--dy:-65px;--delay:.95s}
+.js-ready .gift-section:not(.visible) .party-popper img,.js-ready .gift-section:not(.visible) .party-star{animation-play-state:paused}
+@keyframes party-bounce{0%,45%,100%{transform:rotate(-4deg) translateY(0)}12%{transform:rotate(5deg) translateY(-5px)}22%{transform:rotate(-7deg) translateY(-2px)}32%{transform:rotate(2deg) translateY(-4px)}}
+@keyframes party-spark{0%,8%{opacity:0;transform:translate(0,0) scale(.5) rotate(0)}15%{opacity:.8}55%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.1) rotate(70deg)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.1) rotate(70deg)}}
+@media(max-width:700px){.party-popper{width:115px;margin-bottom:25px}}
+@media(prefers-reduced-motion:reduce){.party-popper img,.party-star{animation:none!important}.party-star{display:none}}
+
+.birthday-garland{display:block;width:100%;max-width:1440px;height:auto;margin:0 auto;pointer-events:none}
+.birthday-garland+.hero{padding-top:20px}
+@media(max-width:700px){.birthday-garland+.hero h1{margin-top:25px}}
+
+.gift-details .movie-tickets+h3{margin:28px 0 0}
+
+.gift-details .gift-message{margin:20px auto 0;max-width:340px;font-size:14px;line-height:1.8}
+
+/* Keep the illustration at the bottom of the opening screen on each device. */
+.hero{min-height:100vh;min-height:100svh;padding:0;display:flex;flex-direction:column;align-items:center}
+.hero .birthday-garland{width:100%;height:12vh;height:12svh;flex-shrink:0;object-fit:contain;object-position:center top}
+.hero h1{font-size:clamp(48px,9vh,120px);font-size:clamp(48px,9svh,120px);line-height:.95;margin:12px 12px 14px;flex-shrink:0}
+.hero .hero-copy{margin:0 auto 12px;flex-shrink:0}
+.hero>.pill{margin-bottom:12px;flex-shrink:0}
+.hero .friends{width:100%;margin: auto 0 0;position:relative;height:32vh;height:32svh;min-height:155px;flex-shrink:0;overflow:hidden}
+.hero .friends img{width:100%;height:100%;object-fit:cover;object-position:center 20%;border-radius:0}
+.hero .friends p{position:absolute;bottom:8px;left:0;right:0;margin:0;color:var(--brown);text-shadow:0 1px 5px var(--cream)}
+@media(max-width:700px){.hero h1{font-size:clamp(48px,8.7vh,96px);font-size:clamp(48px,8.7svh,96px);margin:8px 12px 12px}.hero .friends img{object-position:center top}}
+@media(max-height:600px) and (min-width:701px){.hero{min-height:100svh}.hero h1{font-size:54px}.hero .friends{height:190px}}
+
+/* Keep the opening illustration close to the text instead of filling the gap. */
+.hero{min-height:0}
+.hero .friends{margin:8px 0 0}
+
+/* Desktop keeps the same vertical order, with the full illustration below. */
+@media(min-width:900px){
+  .hero{display:flex;flex-direction:column;align-items:center;max-width:1320px;margin:0 auto;padding:0;overflow:hidden}
+  .hero .birthday-garland{width:100%;height:auto;max-height:160px;object-fit:contain;margin:0 0 16px}
+  .hero h1{font-size:clamp(76px,min(8vw,12svh),120px);line-height:.95;margin:0 12px 18px;letter-spacing:-3px}
+  .hero .hero-copy{max-width:390px;margin:0 auto 12px;padding:0 16px;line-height:1.8}
+  .hero>.pill{margin:0 0 12px}
+  .hero .friends{width:100%;height:auto;min-height:0;margin:8px 0 0;overflow:visible}
+  .hero .friends img{display:block;width:100%;height:auto;object-fit:contain;object-position:center}
+  .hero .friends p{position:static;margin:12px 0 22px;font-size:27px;text-shadow:none}
+  .hero .title-heart{width:38px;height:38px;margin:18px 0 0 6px}
+}
+
+@media(max-width:700px){.hero .friends{margin-top:24px}}
+
+/* Equal spacing above the image and before its caption on mobile. */
+@media(max-width:700px){
+  .hero>.pill{margin-bottom:0}
+  .hero .friends{height:auto;min-height:0;margin-top:24px}
+  .hero .friends img{height:32vh;height:32svh;min-height:155px}
+  .hero .friends p{position:static;margin:24px 0 0;text-shadow:none}
+}

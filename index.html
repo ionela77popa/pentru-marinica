@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ed">
+  <meta name="description" content="O mică lume de gânduri frumoase, doar pentru Marina. La mulți ani!">
+  <title>pentru marinica ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petals" aria-hidden="true"></div>
+  <main>
+    <section class="hero" id="acasa">
+      <img class="birthday-garland" src="assets/ghirlanda.png" alt="" aria-hidden="true" width="2089" height="753" fetchpriority="high">
+      <h1>la<br>mulți<br>ani,<br><span>marina!</span><svg class="title-heart" viewBox="0 0 80 80" aria-hidden="true"><path d="M40 68C20 50 5 38 12 22C18 9 34 13 40 25C47 10 64 12 69 25C75 41 58 56 40 68Z"/></svg></h1>
+      <p class="hero-copy">îți împachetez o îmbrățișare și o trimit cu ruta 43 spre păcurari.</p>
+      <a class="pill" href="#scrisoare">am ceva pentru tine <span>↓</span></a>
+      <div class="friends">
+        <img src="assets/noi-4-crem.png" alt="noi două, una blondă și una brunetă, cu eșarfe roz" width="1492" height="1054">
+        <p>tu + eu</p>
+      </div>
+    </section>
+
+    <section class="letter-section reveal" id="scrisoare">
+      <h2>unele lucruri merită<br><em>scrise de mână.</em></h2>
+      <p class="section-copy">așa că ți-am lăsat aici o scrisoare.</p>
+      <button class="envelope" id="open-letter" aria-expanded="false" aria-controls="letter"><span class="envelope-flap"></span><span class="envelope-address">pentru Marina</span><span class="seal">♡</span><span class="envelope-hint">atinge ca să deschizi</span></button>
+      <article id="letter" class="letter" hidden>
+        <h3>gugusica mea scumpă,</h3>
+        <p>mă bucur enorm că te-am întânit în sala de clasă unde am scris etapa județeană la olimpiadă și că m-am lipit de tine până am devenit prietene!! ești un om foarte drag pentru mine, ai un loc aparte în inima mea, pentru că de-a lungul timpului am reușit să formăm o conexiune deosebit de strânsă. îmi plac glumele tale, îmi place când râzi la glumele mele și sper că prietenia noastră îți coloreaza această perioadă din viață.</p>
+        <p>ador cât ești de hazlie, dar în același timp foarte matură, ador voința și perseverența ta, pentru că toate astea împreună mă fac mândră să am așa o persoană alături.</p>
+        <p>mă bucur că exiști, mă bucur că mă alegi pe mine pentru bârfele tale, mă bucur că poți fi ”tu” cu mine.</p>
+        <p>iar pe lângă asta, îți doresc sănătate, pace, chizdă și calâm, voie bună și kalian la timp.</p>
+        <p>la mulți ani! îți doresc o zi cât mai pizdataia și să hodinești osu cum trebu!</p>
+        <p>te iubesc!!</p>
+        <p class="signature">din inimă, Ionela</p>
+      </article>
+    </section>
+
+    <section class="memories reveal" id="amintiri">
+      <div class="section-top"><div><p class="eyebrow">02 / NOI, ÎN CÂTEVA CADRE</p><h2>nu avem multe poze<br><em>zato toate crinjovâie ♡</em></h2></div></div>
+      <div class="photo-grid">
+        <figure class="polaroid"><button class="photo-slot" data-photo="1" aria-label="Deschide prima fotografie"><img src="assets/noi-1.jpg" alt="O amintire cu noi două" hidden><span class="photo-placeholder"><span class="sketch-flower">✿</span></span></button><span class="tape" aria-hidden="true"></span></figure>
+        <figure class="polaroid"><button class="photo-slot" data-photo="2" aria-label="Deschide a doua fotografie"><img src="assets/noi-2.jpg" alt="Un moment frumos împreună" hidden><span class="photo-placeholder second"></span></button><span class="tape" aria-hidden="true"></span></figure>
+        <figure class="polaroid"><button class="photo-slot" data-photo="3" aria-label="Deschide a treia fotografie"><img src="assets/noi-3.jpg" alt="O fotografie dragă cu noi" hidden><span class="photo-placeholder third"><span class="sketch-flower">♡</span></span></button><span class="tape" aria-hidden="true"></span></figure>
+      </div>
+    </section>
+
+    <section class="notes-section reveal" id="biletele"><p class="eyebrow">03 / PENTRU ZILELE ÎN CARE AI NEVOIE</p><h2>un borcănel de<br><em>gânduri frumoase.</em></h2><p class="section-copy">ia un bilețel. păstrează gândul.</p>
+      <div class="jar-scene"><div class="jar" aria-hidden="true"><div class="jar-lid"></div><div class="paper p1">♡</div><div class="paper p2">♡</div><div class="paper p3">♡</div><div class="paper p4">♡</div><div class="jar-label">pentru tine<br><span>cu drag</span></div></div><div class="note-card"><p id="note-text" aria-live="polite">un gând frumos te așteaptă aici.</p><span id="note-count">o mică doză de bine</span></div></div>
+      <button class="pill rose" id="draw-note">alege un bilețel <span>♡</span></button>
+    </section>
+
+    <section class="wish-section reveal"><p class="eyebrow">04 / ȘI ACUM, PARTEA IMPORTANTĂ</p><h2>pune-ți <em>o dorință.</em></h2><p class="section-copy">sau mai multe, tu meriți</p><button class="cake-button mice-cake" id="candle" aria-label="ține apăsat pe tort 3 secunde ca să sufli în cele 20 de lumânări" aria-describedby="wish-message"><img src="assets/tort-20-lumanari.png" alt="trei șoricei țin un tort roz cu 20 de lumânări" width="1216" height="1294"><span class="candle-fire birthday-candle" style="left:26.32%;top:17.47%;--flicker-delay:-0.00s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:29.28%;top:16.00%;--flicker-delay:-0.19s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:32.48%;top:13.99%;--flicker-delay:-0.38s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:36.10%;top:16.69%;--flicker-delay:-0.57s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:39.47%;top:12.83%;--flicker-delay:-0.76s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:42.19%;top:16.77%;--flicker-delay:-0.95s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:45.23%;top:11.75%;--flicker-delay:-1.14s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:49.10%;top:16.85%;--flicker-delay:-0.00s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:52.06%;top:13.14%;--flicker-delay:-0.19s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:54.52%;top:16.38%;--flicker-delay:-0.38s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:57.32%;top:11.90%;--flicker-delay:-0.57s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:60.12%;top:16.77%;--flicker-delay:-0.76s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:63.16%;top:11.44%;--flicker-delay:-0.95s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:65.79%;top:16.77%;--flicker-delay:-1.14s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:69.08%;top:12.67%;--flicker-delay:-0.00s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:73.11%;top:14.53%;--flicker-delay:-0.19s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:75.33%;top:17.93%;--flicker-delay:-0.38s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:78.87%;top:15.92%;--flicker-delay:-0.57s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:82.98%;top:16.77%;--flicker-delay:-0.76s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span><span class="candle-fire birthday-candle" style="left:87.66%;top:17.93%;--flicker-delay:-0.95s" aria-hidden="true"><span class="spark"></span><span class="smoke"></span></span></button><div class="hold-progress" id="hold-progress" role="progressbar" aria-label="progresul stingerii lumânărilor" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0"><span></span></div><p id="wish-message" aria-live="polite">ține apăsat pe tort 3 secunde ca să sufli ♡</p><p class="wish-end">sper ca toate dorințele să devină realitate.<br><span>și sper ca măcar ceva să pot face eu pentru tine</span></p></section>
+
+    <section class="gift-section reveal" id="cadou">
+      <div class="party-popper" aria-hidden="true">
+        <img src="assets/confetti-pastel.png" alt="" width="1165" height="1350" loading="lazy">
+        <span class="party-star star-a">✧</span><span class="party-star star-b">✦</span><span class="party-star star-c">♡</span><span class="party-star star-d">✧</span>
+      </div>
+      <p class="eyebrow">05 / O SURPRIZĂ PENTRU NOI DOUĂ</p>
+      <h2>mai am <em>ceva pentru tine.</em></h2>
+      <button class="gift-reveal pill rose" id="reveal-gift" aria-expanded="false" aria-controls="gift-content">deschide cadoul <span>♡</span></button>
+      <div id="gift-content" class="gift-content" hidden>
+        <div class="movie-poster"><img id="movie-poster" data-src="assets/film-transparent.png" alt="două bilete roz la filmul Verity" width="1314" height="1197" hidden><div id="poster-placeholder" aria-hidden="true"><span>♡</span></div></div>
+        <div class="gift-details"><div class="movie-tickets" aria-label="două bilete la film"><div class="movie-ticket"><span>locul 6 pentru</span><strong>mine</strong></div><div class="movie-ticket"><span>locul 7 pentru</span><strong>tine</strong></div></div><h3>împreună facem 67!</h3><p class="gift-message">încât nu îți știu planurile și programul, vei alege tu o zi in care sa mergem. te iubesc din inimă!</p></div>
+      </div>
+    </section>
+  </main>
+  <footer><a href="#acasa">happy birthday, gugusica!</a><small>un mic cadou, un mare te iubesc</small></footer>
+  <dialog id="photo-dialog"><button id="close-photo" aria-label="Închide fotografia">×</button><img id="large-photo" alt="Fotografia noastră mărită"></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
