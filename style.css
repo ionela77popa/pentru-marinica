@@ -127,3 +127,8 @@ footer>a{display:block;margin-top:18px}
 
 .scroll-grow{transform:translateY(var(--scroll-lift,10px)) scale(var(--scroll-scale,.92));transform-origin:center center}
 @media(prefers-reduced-motion:reduce){.scroll-grow{transform:none}}
+
+/* Surprise revealed after all birthday candles are extinguished. */
+.birthday-sticker{width:min(240px,70vw);margin:30px auto 0}
+.birthday-sticker video{display:block;width:100%;height:auto;object-fit:contain}
+.sticker-toggle{display:block;margin:10px auto 0;padding:6px 12px;border:1px solid #d7b9b4;border-radius:20px;background:transparent;color:var(--muted);font-size:10px}

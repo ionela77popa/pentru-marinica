@@ -10,10 +10,12 @@ window.addEventListener('pageshow', resetPageScroll);
 let scrollFrame;
 function stopScroll() { cancelAnimationFrame(scrollFrame); }
 ['wheel', 'touchstart', 'pointerdown', 'keydown'].forEach(type => window.addEventListener(type, stopScroll, { passive: true }));
-function smoothScrollTo(target) {
+function smoothScrollTo(target, alignment = 'start') {
   stopScroll();
   const from = window.scrollY;
-  const to = Math.max(0, Math.min(from + target.getBoundingClientRect().top - 35, document.documentElement.scrollHeight - window.innerHeight));
+  const bounds = target.getBoundingClientRect();
+  const distance = alignment === 'end' ? bounds.bottom - window.innerHeight + 28 : bounds.top - 35;
+  const to = Math.max(0, Math.min(from + distance, document.documentElement.scrollHeight - window.innerHeight));
   if (reducedMotion) { window.scrollTo({ top: to, behavior: 'instant' }); return; }
   const start = performance.now();
   const duration = Math.min(1200, 650 + Math.abs(to - from) * 0.2);
@@ -113,6 +115,40 @@ const candle = document.querySelector('#candle');
 const candleFlames = [...candle.querySelectorAll('.candle-fire')];
 const holdProgress = document.querySelector('#hold-progress');
 const progressFill = holdProgress.querySelector('span');
+const birthdaySticker = document.querySelector('#birthday-sticker');
+const stickerVideo = document.querySelector('#birthday-sticker-video');
+const stickerToggle = document.querySelector('#toggle-sticker');
+stickerVideo.muted = true;
+stickerVideo.addEventListener('play', () => { stickerToggle.textContent = 'oprește animația'; });
+stickerVideo.addEventListener('pause', () => { stickerToggle.textContent = 'pornește animația'; });
+stickerVideo.addEventListener('error', () => {
+  stickerToggle.textContent = 'reîncearcă animația';
+});
+function playSticker() {
+  stickerVideo.play().catch(() => { stickerToggle.textContent = 'pornește animația'; });
+}
+stickerToggle.addEventListener('click', () => {
+  if (stickerVideo.error) stickerVideo.load();
+  if (stickerVideo.paused) playSticker();
+  else stickerVideo.pause();
+});
+function revealBirthdaySticker() {
+  birthdaySticker.hidden = false;
+  stickerVideo.currentTime = 0;
+  if (!reducedMotion) {
+    playSticker();
+    birthdaySticker.animate?.([
+      { opacity: 0, transform: 'translateY(16px)' },
+      { opacity: 1, transform: 'translateY(0)' }
+    ], { duration: 600, easing: 'ease-out' });
+  }
+  requestAnimationFrame(() => {
+    // Move only enough to fit the sticker and its playback button on screen.
+    if (birthdaySticker.getBoundingClientRect().bottom > window.innerHeight - 28) {
+      smoothScrollTo(birthdaySticker, 'end');
+    }
+  });
+}
 const holdDuration = 3000;
 let holdStart = null;
 let holdFrame;
@@ -131,6 +167,7 @@ function updateHold(now) {
   candle.classList.remove('holding');
   candle.setAttribute('aria-label', 'dorința ta a fost trimisă. la mulți ani, marina!');
   document.querySelector('#wish-message').textContent = 'dorința ta e în drum spre stele. la mulți ani! ♡';
+  revealBirthdaySticker();
   sprinkle(38);
 }
 function startHold() {
